@@ -1,0 +1,173 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title>MEU PRIMEIRO PROJETO PG2</title>
+
+</head>
+
+<body>
+    <!--IMG SRC PARA COLOCAR O LOGO-->
+    <img src="logo.png" alt=aqui apareceria o logo>
+    <!--H2 CABEÇALHO-->
+    <h2>CADASTRO PARA COLETA DE MEDICAMENTOS</h2>
+    <!--ACTION PARA CHAMAR UM ARQUIVO DE METHOD PARA SELECIONAR O MÉTODO DE ENVIO DESSES DADOS-->
+    <form>
+        <!--Fieldset é a caixa que cria a linha que desenha o formulário-->
+        <fieldset>
+            <legend><strong>LOGIN</strong></legend>
+            <p>
+                <label for="email">
+                    Email:
+                </label>
+                <input type="email" id="email" placeholder="digite seu email aqui">
+            </p>
+            <!--CAIXA PARA SELECIONAR A DATA DE NASCIMENTO com calendário-->
+
+            <p>
+                <!--Placeholder não funciona nas datas-->
+                <!--Password - oculta a informação digitada no input-->
+                <label for="senha">
+                    Senha:
+                </label>
+                <input type="password" id="senha" placeholder="digite sua senha aqui">
+            </p>
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <legend><strong> DADOS PESSOAIS</strong></legend>
+
+            <p>
+                <label for="nome">
+                    Nome:
+                </label>
+                <input type="text" id="nome" name="nome" placeholder="digite seu nome aqui">
+
+            <p>
+                <label for="numero">
+                    CPF:
+                </label>
+                <input type="number" id="numero" name="numero" placeholder="digite seu CPF">
+
+            </p>
+
+            <p>
+                <label for="dataNascimento"></label>Data de nascimento:
+                <input type="date" id="dataNascimento" name="dataNascimento"
+                    placeholder="Selecione sua data de nascimento">
+            </p>
+
+            <p>
+                <label for="endereço"></label>Endereço:
+                <input type="andress" id="endereço" name="endereço" placeholder="digite endereço + CEP">
+            </p>
+
+            <!--Seletor de Estado para a Caixa-->
+            <p>
+                <label for="estado">Estado:</label>
+                <select id="estado" name="estado">
+                    <option>selecione o seu Estado</option>
+                    <option value=" AC "> Acre </option>
+                    <option value=" AL "> Alagoas </option>
+                    <option value=" AP "> Amapá </option>
+                    <option value=" AM "> Amazonas </option>
+                    <option value=" BA "> Bahia </option>
+                    <option value=" CE "> Ceará </option>
+                    <option value=" DF "> Distrito Federal</option>
+                    <option value=" ES "> Espírito Santo </option>
+                    <option value=" GO "> Goiás </option>
+                    <option value=" MA "> Maranhão </optio>
+                    <option value=" MT "> Mato Grosso </option>
+                    <option value=" MS "> Mato Grosso do Sul </option>
+                    <option value=" MG "> Minas Gerais </option>
+                    <option value=" PA "> Pará </option>
+                    <option value=" PB "> Paraíba </option>
+                    <option value=" PR "> Paraná </option>
+                    <option value=" PE "> Pernambuco </option>
+                    <option value=" PI "> Piauí </option>
+                    <option value=" RJ "> Rio de Janeiro </option>
+                    <option value=" RN "> Rio Grande do Norte </option>
+                    <option value=" RS "> Rio Grande do Sul </option>
+                    <option value=" RO "> Rondônia </option>
+                    <option value=" RR "> Roraima </option>
+                    <option value=" SC "> Santa Catarina </option>
+                    <option value=" SP "> São Paulo </option>
+                    <option value=" SE "> Sergipe </option>
+                    <option value=" TO "> Tocantins </option>
+
+                </select>
+            </p>
+        </fieldset>
+
+        <br>
+        <br>
+        <fieldset>
+            <!--Align Right centraliza para direita-->
+            <legend><strong> SELECIONE A(S) FARMACÊUTICA(S) DO(S) MEDICAMENTO(S) A SER(EM) DEVOLVIDO(S): </strong>
+            </legend>
+            <input type="checkbox" name="opções"> ACHER <BR>
+            <input type="checkbox" name="opções"> BAYER <BR>
+            <input type="checkbox" name="opções"> EMS <BR>
+            <input type="checkbox" name="opções"> PHARLAB <BR>
+            <input type="checkbox" name="opções"> PFIZER <BR>
+            <input type="checkbox" name="opções"> ROCHE <BR>
+            <input type="checkbox" name="opções"> ZAMBON <BR>
+
+            <!--Da para colocar um Fieldset que englobam outros fieldsets - exemplo -->
+        </fieldset>
+        <br>
+        <br>
+
+        <fieldset>
+            <!--radio é usado para seleção de um único elemento na lista.-->
+            <legend><strong> ALGUM MEDICAMENTO VENCIDO? </strong></legend>
+            <label for="positivo"></label>
+            <input type="radio" id="sim" name="positivo" value="0"> SIM <br>
+            <input type="radio" id="não" name="positivo" value="1"> NÃO <br>
+        </fieldset>
+
+        </fieldset>
+        <br>
+
+        <!--textearea permite que o usuário digite um texto/ maior espaço-->
+        <fieldset>
+            <legend><strong> FALE CONOSCO: </strong></legend>
+            <br>
+            <label for="assunto">
+                Assunto:
+            </label>
+            <input type="text" id="nome" name="assunto" placeholder="digite aqui o assunto">
+            <br>
+            <br>
+            <label for="mensagem">
+                Mensagem:
+                <textarea id="mensagem" placeholder="Digite aqui sua mensagem"></textarea>
+            </label>
+        </fieldset>
+
+        <!--botão para submeter as informação as informação no banco de dados -->
+        <p>
+            <button>
+                <type="submit">Enviar
+            </button>
+
+
+            <!-- O botão reset limpa as informações do formulário  -->
+            <button type="reset"> Limpar
+
+            </button>
+
+        </p>
+    </form>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <b>EMPRESA LR SOLUÇÕES</b><br>
+        CNPJ: XX.XXX.XXXX/XX<br>
+        ENDEREÇO: RUA X, Nº X, CIDADE X - XX, BRASIL<br>
+    </footer>
+</body>
+
+</html>
